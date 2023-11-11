@@ -181,7 +181,7 @@ input {
 .formulario{
   display: flex;
   align-items: center;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center;
 }
 
 footer{
