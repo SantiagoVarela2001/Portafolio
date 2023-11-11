@@ -1,0 +1,189 @@
+:root {
+    --color-negro: #160d18;
+  }
+
+  :root {
+    --color-azul-oscuro: #180e3c;
+  }
+
+  :root {
+    --color-azul: #09456c;
+  }
+
+  :root {
+    --color-azul-verdoso: #026f6e;
+  }
+
+  :root {
+    --color-verde-claro: #28d7d1;
+  }
+
+  :root {
+    --color-hueso: #e1e1e1;
+  }
+
+  :root {
+    --color-hueso-translucido: #e1e1e195;
+  }
+
+  @font-face {
+    font-family: 'BebasNeue';
+    src: url('../letras/ChakraPetch-Regular.ttf') format('truetype');
+  }
+
+body{
+    font-family: 'BebasNeue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-hueso) ;
+    text-align: center;
+}
+
+
+
+
+.nombre,
+.presentacion2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.presentacion{
+    color: var(--color-verde-claro);
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+.nombre{
+    color: var(--color-hueso);
+}
+
+.presentacion2{
+    color: var(--color-hueso-translucido);
+}
+
+.conteiner-resumen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 30px;
+}
+
+.resumen {
+    max-width: 60%;
+}
+
+.descarga-cv {
+    background-color: transparent;
+    border: 1px solid var(--color-verde-claro);
+    color: var(--color-hueso);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.descarga-cv:hover {
+    background-color: var(--color-azul-verdoso);
+    color: var(--color-hueso);
+}
+
+.icono{
+  display: inline;
+  margin: 80px;
+  opacity: 0.5;
+}
+
+.icono img {
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+.contenedor1-iconos{
+  margin-bottom: 50px;
+}
+
+.contenedor-iconos{
+margin-top: 50px;
+margin-bottom: 70px;
+}
+
+.titulos{
+  margin-top: 80px;
+  font-size: 40px;
+}
+
+.contenedor-footer{
+  background-color: var(--color-negro);
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.icono-footer{
+  padding-right: 100px;
+  padding-left: 100px;
+  opacity: 0.7;
+  text-decoration: none;
+  color: inherit;
+}
+
+form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 20px;
+  color: var(--color-hueso);  
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  background-color: transparent;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--color-verde-claro);
+  border-radius: 5px;
+}
+
+.boton-enviar {
+  background-color: transparent;
+  border: 1px solid var(--color-verde-claro);
+  color: var(--color-hueso);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.boton-enviar:hover {
+  background-color: var(--color-azul-verdoso);
+  color: var(--color-hueso);
+}
+
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+footer{
+  margin-top: auto;
+}
