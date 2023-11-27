@@ -41,8 +41,6 @@ body{
 }
 
 
-
-
 .nombre,
 .presentacion2 {
     margin-top: 0;
@@ -100,8 +98,8 @@ body{
 }
 
 .icono img {
-  width: 100px; /* Ajusta el tamaño según sea necesario */
-  height: auto; /* Mantiene la proporción original de la imagen */
+  width: 100px;
+  height: auto;
 }
 
 .contenedor1-iconos{
@@ -138,7 +136,6 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   margin-bottom: 20px;
-  color: var(--color-hueso);  
 }
 
 label {

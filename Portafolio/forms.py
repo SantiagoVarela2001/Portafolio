@@ -13,8 +13,8 @@ class ContactoForm(forms.Form):
     telefono = forms.CharField(label='Teléfono',
                                 max_length=15,
                                   min_length=10,
-                                    required=True,
-                                    widget=forms.TextInput(attrs={'placeholder': '11 3857-5528'}))
+                                    required=False,
+                                    widget=forms.TextInput(attrs={'placeholder': '11 3857-5528 (opcional)'}))
 
     email = forms.EmailField(label='Correo Electrónico',
                               max_length=254,

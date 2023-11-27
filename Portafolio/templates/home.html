@@ -21,10 +21,10 @@
     </div>
 
     <div class="conteiner-resumen">
-        <p class="resumen">Tengo 22 a&ntildeos, y Adem&aacute;s de encantarme la <w
-                class="presentacion">m&uacute;sica</w> y
-            trabajar en la producci&oacute;n de artistas, disfruto mucho de la <w
-                class="presentacion">programaci&oacute;n</w> y de resolver problemas.
+        <p class="resumen">Tengo 22 a&ntildeos, y Adem&aacute;s de encantarme la <w class="presentacion">m&uacute;sica
+            </w> y
+            trabajar en la producci&oacute;n de artistas, disfruto mucho de la <w class="presentacion">
+                programaci&oacute;n</w> y de resolver problemas.
             Actualmente, estoy cursando mis &uacute;ltimas materias en la Universidad ORT en la carrera de Analista de
             Sistemas y deseo poner en pr&aacute;ctica todo lo aprendido en estos &uacute;ltimos a&ntilde;os.
         </p>
@@ -36,78 +36,64 @@
 
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../static/imagenes/react.png" class="w-33 icono" alt="React">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>React</h5>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../static/imagenes/css.png" class=" w-33 icono" alt="Css">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>CSS</h5>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../static/imagenes/html.png" class="w-33 icono" alt="HTML">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>HTML</h5>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../static/imagenes/node.png" class="w-33 icono" alt="Node">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Node</h5>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../static/imagenes/java.png" class=" w-33 icono" alt="Java">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Java</h5>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../static/imagenes/python.png" class="w-33 icono" alt="Python">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Python</h5>
-              </div>
-          </div>
+            <div class="carousel-item active">
+                <img src="../static/imagenes/react.png" class="w-33 icono" alt="React">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>React</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/css.png" class=" w-33 icono" alt="Css">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>CSS</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/html.png" class="w-33 icono" alt="HTML">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>HTML</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/node.png" class="w-33 icono" alt="Node">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Node</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/java.png" class=" w-33 icono" alt="Java">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Java</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/imagenes/python.png" class="w-33 icono" alt="Python">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Python</h5>
+                </div>
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
         </button>
-      </div>
+    </div>
 
- <!--<div class="formulario">
-        <form method="post">
-            <h5>Dejame tu contacto !!</h5>
-            <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Santiago Varela" required>
+    <div class="formulario">
+        <form method="POST" action="">
 
-            <label for="telefono">Tel&eacute;fono:</label>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="11 1234-1234" required>
-
-            <label for="email">Correo Electr&oacute;nico:</label>
-            <input type="email" id="email" name="email" placeholder="santiago.varela@hotmail.com" required>
+            {% csrf_token %}
+            {{ form }}
 
             <button class="boton-enviar" type="submit">Enviar</button>
         </form>
-    </div>-->
-
-    <div class="formulario">
-    <form method="post" action="">
-        
-        {% csrf_token %}
-        {{ form }}
-
-        <button class="boton-enviar" type="submit">Enviar</button>
-    </form> 
-</div>
+    </div>
 
 
 
