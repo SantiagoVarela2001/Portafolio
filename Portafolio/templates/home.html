@@ -83,7 +83,7 @@
         </button>
       </div>
 
-<div class="formulario">
+ <!--<div class="formulario">
         <form method="post">
             <h5>Dejame tu contacto !!</h5>
             <label for="nombre">Nombre Completo:</label>
@@ -97,15 +97,17 @@
 
             <button class="boton-enviar" type="submit">Enviar</button>
         </form>
-    </div>
+    </div>-->
 
-    <!--<form method="post" action="">
+    <div class="formulario">
+    <form method="post" action="">
         
         {% csrf_token %}
         {{ form }}
 
-        <input type="submit" value="Submit">
-    </form> -->
+        <button class="boton-enviar" type="submit">Enviar</button>
+    </form> 
+</div>
 
 
 

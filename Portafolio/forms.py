@@ -2,22 +2,24 @@ from django import forms
 import re
 from .models import Contacto
 
-class ContactoForm(forms.ModelForm):
-   
-    class Meta:
-        model = Contacto
-        fields = ["nombre"]
 
+class ContactoForm(forms.Form):
+    nombre = forms.CharField(label='Nombre',
+                              max_length=30,
+                                min_length=4,
+                                  required=True,
+                                  widget=forms.TextInput(attrs={'placeholder': 'Santiago'}))
 
+    telefono = forms.CharField(label='Teléfono',
+                                max_length=15,
+                                  min_length=10,
+                                    required=True,
+                                    widget=forms.TextInput(attrs={'placeholder': '11 3857-5528'}))
 
-
-
-
-
-"""class ContactoForm(forms.Form):
-    nombre = forms.CharField(label='Nombre', max_length=30, min_length=4, required=True)
-    telefono = forms.CharField(label='Teléfono', max_length=15, min_length=10, required=True)
-    email = forms.EmailField(label='Correo Electrónico', max_length=254, required=True)
+    email = forms.EmailField(label='Correo Electrónico',
+                              max_length=254,
+                                required=True,
+                                widget=forms.EmailInput(attrs={'placeholder': 'santiago.varela@hotmail.com'}))
 
 
 
@@ -28,4 +30,4 @@ class ContactoForm(forms.ModelForm):
         if not patron_telefono.match(telefono):
             raise forms.ValidationError('Ingrese un número de teléfono válido.')
         
-        return telefono"""
+        return telefono

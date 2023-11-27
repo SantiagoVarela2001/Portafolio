@@ -10,7 +10,7 @@ def home(request):
     plantillaExterna.close()
     contexto = Context()
     documento = template.render(contexto)
-    return HttpResponse(documento)
+    return render(request, "home.html", {'form': ContactoForm()})
 
 def createForm(request):
     data = {
