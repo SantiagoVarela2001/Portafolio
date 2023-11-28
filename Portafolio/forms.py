@@ -7,7 +7,7 @@ class ContactoForm(forms.Form):
                               max_length=30,
                                 min_length=4,
                                   required=True,
-                                  widget=forms.TextInput(attrs={'placeholder': 'Santiago'}))
+                                  widget=forms.TextInput(attrs={'placeholder': 'Santiago Varela'}))
 
     telefono = forms.CharField(label='Teléfono',
                                 max_length=15,
