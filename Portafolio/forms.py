@@ -1,6 +1,5 @@
 from django import forms
 import re
-from .models import Contacto
 
 
 class ContactoForm(forms.Form):
