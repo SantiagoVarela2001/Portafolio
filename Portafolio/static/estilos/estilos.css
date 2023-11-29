@@ -116,6 +116,36 @@ margin-bottom: 70px;
   font-size: 40px;
 }
 
+.proyectos {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.proyecto{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card {
+  background-color: var(--color-azul-oscuro);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.card-body {
+  background-color: var(--color-azul-oscuro);
+  color: var(--color-hueso);
+}
+
+.card-title {
+  color: var(--color-verde-claro);
+  padding-bottom: 10px;
+}
+
 .contenedor-footer{
   background-color: var(--color-negro);
   padding-top:20px;
