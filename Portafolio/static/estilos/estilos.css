@@ -3,7 +3,7 @@
   }
 
   :root {
-    --color-azul-oscuro: #180e3c;
+    --color-azul-oscuro: #0e0433;
   }
 
   :root {
@@ -130,26 +130,21 @@ margin-bottom: 70px;
 
 .card {
   background-color: var(--color-azul-oscuro);
-  padding: 10px;
+  
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
 
 .card-body {
-  background-color: var(--color-azul-oscuro);
+  background-color: #150e2c94;
   color: var(--color-hueso);
+  border-radius: 8px;
 }
 
 .card-title {
   color: var(--color-verde-claro);
   padding-bottom: 10px;
-}
-
-.contenedor-footer{
-  background-color: var(--color-negro);
-  padding-top:20px;
-  padding-bottom:20px;
 }
 
 .icono-footer{
@@ -164,8 +159,15 @@ form {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 600px;
   margin-bottom: 20px;
+  
+}
+
+.formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 label {
@@ -206,12 +208,31 @@ input {
   color: var(--color-hueso);
 }
 
-.formulario{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contenedor-footer{
+  background-color: var(--color-negro);
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 footer{
   margin-top: auto;
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+  .presentacion {
+      margin-top: 30px; /* Reducir el margen superior en dispositivos pequeños */
+  }
+
+  .icono {
+      margin: 30px; /* Reducir el margen de los íconos */
+  }
+
+  .proyecto {
+      padding: 10px; /* Reducir el relleno de los proyectos */
+  }
+
+  .formulario {
+      width: 80%; /* Reducir el ancho del formulario */
+  }
 }
