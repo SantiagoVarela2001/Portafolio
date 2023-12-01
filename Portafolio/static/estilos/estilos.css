@@ -38,6 +38,7 @@ body{
     background-color: var(--color-azul-oscuro);
     color: var(--color-hueso) ;
     text-align: center;
+
 }
 
 
@@ -122,6 +123,12 @@ margin-bottom: 70px;
   margin-top: 30px;
   margin-bottom: 50px;
 }
+.proyectos2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 
 .proyecto{
   padding-left: 20px;
@@ -129,9 +136,7 @@ margin-bottom: 70px;
 }
 
 .card {
-  background-color: var(--color-azul-oscuro);
-  
-  border-radius: 8px;
+  background: var(--color-azul-oscuro);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
@@ -140,6 +145,7 @@ margin-bottom: 70px;
   background-color: #150e2c94;
   color: var(--color-hueso);
   border-radius: 8px;
+  height: 300px;
 }
 
 .card-title {
@@ -200,7 +206,6 @@ input {
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px;
 }
 
 .boton-enviar:hover {
@@ -219,20 +224,15 @@ footer{
 }
 
 /* Ajustes para dispositivos pequeños */
-@media (max-width: 768px) {
-  .presentacion {
-      margin-top: 30px; /* Reducir el margen superior en dispositivos pequeños */
-  }
+@media (max-width: 1314px) {
 
-  .icono {
-      margin: 30px; /* Reducir el margen de los íconos */
+  .proyectos2 {
+    display: block;
   }
-
-  .proyecto {
-      padding: 10px; /* Reducir el relleno de los proyectos */
+  .proyectos{
+    margin-top: 0px;
   }
-
-  .formulario {
-      width: 80%; /* Reducir el ancho del formulario */
+  .proyecto{
+    margin-top: 30px;
   }
 }
